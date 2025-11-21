@@ -5,8 +5,10 @@
 # ---- Eclipse project files ----
 .classpath
 .project
-.settings/
 .metadata/
+
+# .settings은 공유 추천(각자 설정 맞추기 편함)
+# 만약 숨기려면 .settings/ 추가
 
 # ---- Build / Output ----
 bin/
@@ -43,3 +45,5 @@ volume/
 
 # ---- WebContent build caches ----
 WebContent/WEB-INF/lib/
+# But DO include necessary JARs (like MySQL Connector)
+!WebContent/WEB-INF/lib/*.jar
